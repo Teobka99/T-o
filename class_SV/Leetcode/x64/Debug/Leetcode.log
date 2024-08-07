@@ -1,0 +1,10 @@
+﻿  price.cpp
+D:\Visua\class_SV\Leetcode\price.cpp(18,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Visua\class_SV\Leetcode\price.cpp(29,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Visua\class_SV\Leetcode\price.cpp(47,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Visua\class_SV\Leetcode\price.cpp(62,18): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\Visua\class_SV\Leetcode\price.cpp(71,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Visua\class_SV\Leetcode\price.cpp(78,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Visua\class_SV\Leetcode\price.cpp(100,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Visua\class_SV\Leetcode\price.cpp(125,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Leetcode.vcxproj -> D:\Visua\class_SV\x64\Debug\Leetcode.exe

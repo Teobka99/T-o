@@ -1,0 +1,3 @@
+﻿  template.cpp
+D:\Visua\class_SV\template\template.cpp(28,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  template.vcxproj -> D:\Visua\class_SV\x64\Debug\template.exe
