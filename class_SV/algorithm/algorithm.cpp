@@ -47,7 +47,7 @@ void sortarr::interchange_sort(vector<int>& arr)
 // budble sort
 void sortarr::buble_sort(vector<int>& arr)
 {
-	int length = arr.size();
+	size_t length = arr.size();
 	for (int i = 1; i < length; i++)
 	{
 		for (int j = i -1; j < length -1; j++)
@@ -61,10 +61,28 @@ void sortarr::buble_sort(vector<int>& arr)
 }
 
 
+void sortarr::insersort(vector<int>& arr)
+{
+	int x, pos;
+	size_t length = arr.size();
+	for (rsize_t i = 1; i < length; i++)
+	{
+		x = arr[i];
+		pos = i;
+		while (pos !=0 && x < arr[pos -1])
+		{
+			arr[pos] = arr[pos - 1];
+			pos--;
+			arr[pos] = x;
+		}
+	}
+}
+
 int main()
 {
 	sortarr s1;
 	vector<int> arr = { 1,5,7,9,24,59,24,148,15156,1416,6214242,1414 };
-	s1.buble_sort(arr);
+	//s1.buble_sort(arr);
+	s1.insersort(arr);
 	s1.show_arr(arr);
 }
