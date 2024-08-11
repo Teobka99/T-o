@@ -60,12 +60,12 @@ void sortarr::buble_sort(vector<int>& arr)
 	}
 }
 
-
+// insertion sort
 void sortarr::insersort(vector<int>& arr)
 {
 	int x, pos;
 	size_t length = arr.size();
-	for (rsize_t i = 1; i < length; i++)
+	for (size_t i = 1; i < length; i++)
 	{
 		x = arr[i];
 		pos = i;
@@ -78,11 +78,40 @@ void sortarr::insersort(vector<int>& arr)
 	}
 }
 
+// selection sort
+
+void sortarr::selection_sort(vector<int>& arr)
+{
+	int lenght = arr.size();
+	for (int i = 0; i < lenght -1; i++)
+	{
+		int min = i;
+		for (int j = i + 1; j < lenght; j++)
+		{
+			if (arr[j] < arr[i])
+			{
+				min = j;
+			}
+		}
+		if (i != min)
+		{
+			sortarr::swap(arr[i], arr[min]);
+		}
+
+	}
+}
+
+// quick Sort
+void sortarr::quick_sort(vector<int>& arr)
+{
+
+}
 int main()
 {
 	sortarr s1;
 	vector<int> arr = { 1,5,7,9,24,59,24,148,15156,1416,6214242,1414 };
 	//s1.buble_sort(arr);
-	s1.insersort(arr);
+	//s1.insersort(arr);
+	s1.selection_sort(arr);
 	s1.show_arr(arr);
 }
