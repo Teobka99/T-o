@@ -88,7 +88,7 @@ void sortarr::selection_sort(vector<int>& arr)
 		int min = i;
 		for (int j = i + 1; j < lenght; j++)
 		{
-			if (arr[j] < arr[i])
+			if (arr[j] < arr[min])
 			{
 				min = j;
 			}
@@ -102,16 +102,43 @@ void sortarr::selection_sort(vector<int>& arr)
 }
 
 // quick Sort
-void sortarr::quick_sort(vector<int>& arr)
+void sortarr::quick_sort(vector<int>& arr , int low, int high)
 {
-
+	int l = low, r = high;
+	int tb = (l + r) / 2;
+	while (l < r)
+	{
+		while (arr[tb] > arr[l])
+		{
+			l++;
+		}
+		while (arr[tb] < arr[r])
+		{
+			r--;
+		}
+		if (l <= r)
+		{
+			sortarr::swap(arr[l], arr[r]);
+			l++;
+			r--;
+		}
+	}
+	if (l < high)
+	{
+		sortarr::quick_sort(arr, l, high);
+	}
+	if (r > low)
+	{
+		sortarr::quick_sort(arr, low, r);
+	}
 }
 int main()
 {
 	sortarr s1;
-	vector<int> arr = { 1,5,7,9,24,59,24,148,15156,1416,6214242,1414 };
+	vector<int> arr = { 12,2,8,5,1,6,4,15 ,90,43,13,51};
 	//s1.buble_sort(arr);
 	//s1.insersort(arr);
-	s1.selection_sort(arr);
+	//s1.selection_sort(arr);
+	s1.quick_sort(arr,0, 11);
 	s1.show_arr(arr);
 }

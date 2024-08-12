@@ -15,7 +15,7 @@ public:
 	void buble_sort(vector<int>& arr);
 	void insersort(vector<int>& arr);
 	void selection_sort(vector<int>& arr);
-	void quick_sort(vector<int>& arr);
+	void quick_sort(vector<int>& arr, int low, int high);
 	void show_arr(vector<int> &arr);
 };
 
