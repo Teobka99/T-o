@@ -105,17 +105,24 @@ void sortarr::selection_sort(vector<int>& arr)
 void sortarr::quick_sort(vector<int>& arr , int low, int high)
 {
 	int l = low, r = high;
+	// chon phan tu chot: phan tu ow giua mang.
 	int tb = (l + r) / 2;
+	// quick Sort: chia thanh tung mang nho va hon hon arr[tb] va arrange.
 	while (l < r)
 	{
+		// find the element have arr[element] > arr[tb] to swap.
+		// from begin = l.
 		while (arr[tb] > arr[l])
 		{
 			l++;
 		}
+		// find the element have arr[element] < arr[tb] to swap.
+		// from the end = r.
 		while (arr[tb] < arr[r])
 		{
 			r--;
 		}
+		// swap if l < r because l from begin() and r from end().
 		if (l <= r)
 		{
 			sortarr::swap(arr[l], arr[r]);
@@ -123,6 +130,7 @@ void sortarr::quick_sort(vector<int>& arr , int low, int high)
 			r--;
 		}
 	}
+	// continue arrange the array after arranged the arr to sides.
 	if (l < high)
 	{
 		sortarr::quick_sort(arr, l, high);
