@@ -19,3 +19,20 @@ public:
 	void show_arr(vector<int> &arr);
 };
 
+class tamgiac
+{
+private:
+	int a, b, c;
+public:
+	tamgiac()
+	{
+		a = 1;
+		b = 1;
+		c = 1;
+	};
+	// function gan x , y, z to a,b,c.
+	tamgiac(int x, int y, int z) : a(x), b(y), c(z)
+	{}
+
+	friend bool KTtamgiac(tamgiac test);
+};

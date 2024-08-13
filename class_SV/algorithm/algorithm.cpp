@@ -140,6 +140,12 @@ void sortarr::quick_sort(vector<int>& arr , int low, int high)
 		sortarr::quick_sort(arr, low, r);
 	}
 }
+
+bool KTtamgiac(tamgiac test)
+{
+	
+}
+
 int main()
 {
 	sortarr s1;
