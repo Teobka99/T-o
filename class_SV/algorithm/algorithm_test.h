@@ -35,4 +35,10 @@ public:
 	{}
 
 	friend bool KTtamgiac(tamgiac test);
+
+	friend ostream& operator << (ostream& os, tamgiac test)
+	{
+		os << "a = " << test.a << "\n" << "b = " << test.b << "\n" << "c = " << test.c << endl;
+		return os;
+	}
 };

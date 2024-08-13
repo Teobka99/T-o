@@ -143,16 +143,27 @@ void sortarr::quick_sort(vector<int>& arr , int low, int high)
 
 bool KTtamgiac(tamgiac test)
 {
-	
+	if (test.a !=0 && test.b != 0 && test.c != 0 && (test.a + test.b) > test.c && (test.a + test.c) > test.b && (test.b + test.c) > test.a)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 int main()
 {
-	sortarr s1;
-	vector<int> arr = { 12,2,8,5,1,6,4,15 ,90,43,13,51};
+	//sortarr s1;
+	//vector<int> arr = { 12,2,8,5,1,6,4,15 ,90,43,13,51};
 	//s1.buble_sort(arr);
 	//s1.insersort(arr);
 	//s1.selection_sort(arr);
-	s1.quick_sort(arr,0, 11);
-	s1.show_arr(arr);
+	//s1.quick_sort(arr,0, 11);
+	//s1.show_arr(arr);
+	tamgiac s1(3, 4, 5);
+	KTtamgiac(s1);
+	cout << s1;
+	return 0;
 }
