@@ -25,6 +25,11 @@ void nhapthongtin(person * arr)
 }
 int main()
 {
-
+	int n;
+	cin >> n;
+	person s1;
+	person* arr = new person[n];
+	nhapthongtin(arr);
+	s1.show();
 }
 

@@ -14,8 +14,10 @@ public:
 	point();
 	point(int& a, int& b);
 	~point();
-	friend istream& operator >> (istream& is, point& obj);
-	friend ostream& operator << (ostream& os, point& obj);
+	void nhap();
+	void output();
+	//friend istream& operator >> (istream& is, point& obj);
+	//friend ostream& operator << (ostream& os, point& obj);
 	bool cheochinh(point& obj);
 };
 

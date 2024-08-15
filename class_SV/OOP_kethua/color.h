@@ -16,8 +16,10 @@ public:
 	color();
 	color(string& mausac, string& mamau);
 	~color();
-	friend istream &operator >> (istream& is, color &obj);
-	friend ostream& operator << (ostream& os, color& obj);
+	void nhap();
+	void output();
+	//friend istream &operator >> (istream& is, color &obj);
+	//friend ostream& operator << (ostream& os, color& obj);
 	string gettenmau();
 };
 

@@ -24,21 +24,35 @@ point::~point()
 	x = y = 0;
 }
 
-istream& operator >>(istream& is, point& obj)
+void point::nhap()
 {
 	cout << "nhap x: ";
-	is >> obj.x;
+	cin >> x;
 	cout << "nhap y: ";
-	is >> obj.y;
-	return is;
+	cin >> y;
 }
 
-ostream& operator << (ostream& os, point& obj)
+void point::output()
 {
-	os << "x = " << obj.x << endl;
-	os << "y = " << obj.y << endl;
-	return os;
+	cout << "x: " << x << endl;
+	cout << "y: " << y << endl;
 }
+
+//istream& operator >>(istream& is, point& obj)
+//{
+//	cout << "nhap x: ";
+//	is >> obj.x;
+//	cout << "nhap y: ";
+//	is >> obj.y;
+//	return is;
+//}
+
+//ostream& operator << (ostream& os, point& obj)
+//{
+//	os << "x = " << obj.x << endl;
+//	os << "y = " << obj.y << endl;
+//	return os;
+//}
 
 bool point::cheochinh(point& obj)
 {

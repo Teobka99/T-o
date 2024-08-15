@@ -24,24 +24,39 @@ color::~color()
 {
 	mausac = mamau = "";
 }
-
-istream& operator >>(istream& is, color& obj)
+void color::nhap()
 {
-	cout << "nhap mau: ";
+	cout << "nhap mau sac: ";
 	cin.ignore();
-	getline(is, obj.mausac);
+	getline(cin, mausac);
 	cout << "nhap ma mau: ";
 	cin.ignore();
-	getline(is, obj.mamau);
-	return is;
+	getline(cin, mamau);
 }
 
-ostream& operator <<(ostream& os, color& obj)
+void color::output()
 {
-	os << obj.mausac << endl;
-	os << obj.mamau << endl;
-	return os;
+	cout << "mau: " << mausac << endl;
+	cout <<"ma: " << mamau << endl;
 }
+
+//istream& operator >>(istream& is, color& obj)
+//{
+//	cout << "nhap mau: ";
+//	cin.ignore();
+//	getline(is, obj.mausac);
+//	cout << "nhap ma mau: ";
+//	cin.ignore();
+//	getline(is, obj.mamau);
+//	return is;
+//}
+
+//ostream& operator <<(ostream& os, color& obj)
+//{
+//	os << obj.mausac << endl;
+//	os << obj.mamau << endl;
+//	return os;
+//}
 
 string color::gettenmau()
 {
