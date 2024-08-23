@@ -45,14 +45,14 @@ void sortarr::interchange_sort(vector<int>& arr)
 
 
 // budble sort
-void sortarr::buble_sort(vector<int>& arr)
+void sortarr::bubble_sort(vector<int>& arr)
 {
 	size_t length = arr.size();
-	for (int i = 1; i < length; i++)
+	for (int i = 0; i < length - 1; i++)
 	{
-		for (int j = i -1; j < length -1; j++)
+		for (int j = 0; j < length- 1 -i; j++)
 		{
-			if (arr[j] > arr[j+1])
+			if (arr[j] > arr[j+ 1])
 			{
 				sortarr::swap(arr[j], arr[j + 1]);
 			}
@@ -153,17 +153,123 @@ bool KTtamgiac(tamgiac test)
 	}
 }
 
+void find_algorithm::binary_search(vector<int> arr)
+{
+	int x;
+	cout << "nhap gia tri tim kiem x: ";
+	cin >> x;
+	// must arrange the array before search.
+	int n = arr.size();
+	int TB = n / 2;
+	if (arr[TB] > x)
+	{
+		for (int i = 0; i < TB; i++)
+		{
+			if (arr[i] == x)
+			{
+				cout <<"vi tri cua x trong mang: " << i;
+			}
+		}
+	}
+	if (arr[TB] == x)
+	{
+		cout << "vij tri cua x trong mang:	" << TB;
+	}
+	if(arr[TB] < x)
+	{
+		for (int i = TB +1; i < n; i++)
+		{
+			if (arr[i] == x)
+			{
+				cout << "vi tri cua x trong mang: " << i;
+			}
+		}
+	}
+}
+
+void find_algorithm::linear_search(vector<int> arr)
+{
+	int x;
+	int length = arr.size();
+	cout << "nhap gia tri can tim x:";
+	cin >> x;
+	for (int i = 0; i < length; i++)
+	{
+		if (arr[i] == x)
+		{
+			cout << "location of x in array: " << i;
+		}
+	}
+}
+
+void sortarr::option()
+{
+	cout << "==============MENU=============" << endl;
+	cout << "1: interchangesort." << endl;
+	cout << "2: bubble_sort." << endl;
+	cout << "3: insertion_sort" << endl;
+	cout << "4: selection_sort." << endl;
+	cout << "5: Quick_sort" << endl;
+	cout << "6: Show_arr" << endl;
+	cout << "7: binary_search" << endl;
+	cout << "0: exit." << endl;
+}
+
+int nhapkey(int &key)
+{
+	cin >> key;
+	return key;
+}
 int main()
 {
-	//sortarr s1;
-	//vector<int> arr = { 12,2,8,5,1,6,4,15 ,90,43,13,51};
-	//s1.buble_sort(arr);
-	//s1.insersort(arr);
-	//s1.selection_sort(arr);
-	//s1.quick_sort(arr,0, 11);
-	//s1.show_arr(arr);
-	tamgiac s1(3, 4, 5);
-	KTtamgiac(s1);
-	cout << s1;
+	find_algorithm s0;
+	sortarr s1;
+	vector<int> arr = { 12,2,8,5,1,6,4,15 ,90,43,13,51 };
+	int n = arr.size() - 1;
+	s1.option();
+	int key;
+	nhapkey(key);
+	switch (key!=0)
+	{
+		switch (key!=0)
+		{
+		case 1:
+		{
+			s1.interchange_sort(arr);
+			nhapkey(key);
+		}
+		case 2:
+		{
+			s1.bubble_sort(arr);
+		}
+		case 3:
+		{
+			s1.insersort(arr);
+		}
+		case 4:
+		{
+			s1.selection_sort(arr);
+		}
+		case 5:
+		{
+			s1.quick_sort(arr, 0, n);
+		}
+		case 6:
+		{
+			s1.show_arr(arr);
+		}
+		case 7:
+		{
+			s0.binary_search(arr);
+		}
+		//tamgiac s1(3, 4, 5);
+		//KTtamgiac(s1);
+		//cout << s1;
+		if (key == 0)
+		{
+			break;
+		}
+		}
+	}
 	return 0;
 }

@@ -10,9 +10,10 @@ using namespace std;
 class sortarr
 {
 public:
+	void option();
 	void swap(int& a, int& b);
 	void interchange_sort(vector<int>& arr);
-	void buble_sort(vector<int>& arr);
+	void bubble_sort(vector<int>& arr);
 	void insersort(vector<int>& arr);
 	void selection_sort(vector<int>& arr);
 	void quick_sort(vector<int>& arr, int low, int high);
@@ -41,4 +42,11 @@ public:
 		os << "a = " << test.a << "\n" << "b = " << test.b << "\n" << "c = " << test.c << endl;
 		return os;
 	}
+};
+
+class find_algorithm
+{
+public:
+	void binary_search(vector<int> arr);
+	void linear_search(vector<int> arr);
 };
