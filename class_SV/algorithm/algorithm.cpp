@@ -197,7 +197,7 @@ void find_algorithm::linear_search(vector<int> arr)
 	{
 		if (arr[i] == x)
 		{
-			cout << "location of x in array: " << i;
+			cout << "location of x in array: " << i << endl;
 		}
 	}
 }
@@ -212,11 +212,15 @@ void sortarr::option()
 	cout << "5: Quick_sort" << endl;
 	cout << "6: Show_arr" << endl;
 	cout << "7: binary_search" << endl;
+	cout << "8: linear_search" << endl;
 	cout << "0: exit." << endl;
+	cout << "===============================" << endl;
 }
 
 int nhapkey(int &key)
 {
+	cout << endl;
+	cout << "nhap key de tiep tuc: ";
 	cin >> key;
 	return key;
 }
@@ -225,51 +229,64 @@ int main()
 	find_algorithm s0;
 	sortarr s1;
 	vector<int> arr = { 12,2,8,5,1,6,4,15 ,90,43,13,51 };
-	int n = arr.size() - 1;
-	s1.option();
 	int key;
-	nhapkey(key);
-	switch (key!=0)
+	int x = 100;
+	while (x!=0)
 	{
-		switch (key!=0)
+		s1.option();
+		while (x!=0)
 		{
-		case 1:
-		{
-			s1.interchange_sort(arr);
 			nhapkey(key);
+			switch (key)
+			{
+			case 1:
+			{
+				s1.interchange_sort(arr);
+				break;
+			}
+			case 2:
+			{
+				s1.bubble_sort(arr);
+				break;
+			}
+			case 3:
+			{
+				s1.insersort(arr);
+				break;
+			}
+			case 4:
+			{
+				s1.selection_sort(arr);
+				break;
+			}
+			case 5:
+			{
+				s1.quick_sort(arr, 0, arr.size() - 1);
+				break;
+			}
+			case 6:
+			{
+				s1.show_arr(arr);
+				break;
+			}
+			case 7:
+			{
+				s0.binary_search(arr);
+				break;
+			}
+			case 8:
+			{
+				s0.linear_search(arr);
+				break;
+			}
+			case 0:
+			{
+				 x = 0;
+			}
+			}
+
 		}
-		case 2:
-		{
-			s1.bubble_sort(arr);
-		}
-		case 3:
-		{
-			s1.insersort(arr);
-		}
-		case 4:
-		{
-			s1.selection_sort(arr);
-		}
-		case 5:
-		{
-			s1.quick_sort(arr, 0, n);
-		}
-		case 6:
-		{
-			s1.show_arr(arr);
-		}
-		case 7:
-		{
-			s0.binary_search(arr);
-		}
-		//tamgiac s1(3, 4, 5);
-		//KTtamgiac(s1);
-		//cout << s1;
-		if (key == 0)
-		{
-			break;
-		}
-		}
+		
 	}
 	return 0;
 }
