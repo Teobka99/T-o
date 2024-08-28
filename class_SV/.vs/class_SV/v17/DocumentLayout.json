@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F76A00A-145A-4C06-96B8-5DBBEED5821B}|OOP_kethua\\OOP_kethua.vcxproj|C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\OOP_kethua\\color.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F76A00A-145A-4C06-96B8-5DBBEED5821B}|OOP_kethua\\OOP_kethua.vcxproj|solutionrelative:OOP_kethua\\color.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{48A34BCC-76D4-4872-A6A3-A585BB4214D4}|Leetcode\\Leetcode.vcxproj|C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\Leetcode\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{48A34BCC-76D4-4872-A6A3-A585BB4214D4}|Leetcode\\Leetcode.vcxproj|solutionrelative:Leetcode\\string.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F76A00A-145A-4C06-96B8-5DBBEED5821B}|OOP_kethua\\OOP_kethua.vcxproj|C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\OOP_kethua\\Pixel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F76A00A-145A-4C06-96B8-5DBBEED5821B}|OOP_kethua\\OOP_kethua.vcxproj|solutionrelative:OOP_kethua\\Pixel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{48A34BCC-76D4-4872-A6A3-A585BB4214D4}|Leetcode\\Leetcode.vcxproj|C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\Leetcode\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{48A34BCC-76D4-4872-A6A3-A585BB4214D4}|Leetcode\\Leetcode.vcxproj|solutionrelative:Leetcode\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F76A00A-145A-4C06-96B8-5DBBEED5821B}|OOP_kethua\\OOP_kethua.vcxproj|C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\OOP_kethua\\point.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F76A00A-145A-4C06-96B8-5DBBEED5821B}|OOP_kethua\\OOP_kethua.vcxproj|solutionrelative:OOP_kethua\\point.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F76A00A-145A-4C06-96B8-5DBBEED5821B}|OOP_kethua\\OOP_kethua.vcxproj|C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\OOP_kethua\\color.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F76A00A-145A-4C06-96B8-5DBBEED5821B}|OOP_kethua\\OOP_kethua.vcxproj|solutionrelative:OOP_kethua\\color.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{48A34BCC-76D4-4872-A6A3-A585BB4214D4}|Leetcode\\Leetcode.vcxproj|C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\Leetcode\\leetcode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{48A34BCC-76D4-4872-A6A3-A585BB4214D4}|Leetcode\\Leetcode.vcxproj|solutionrelative:Leetcode\\leetcode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,55 +26,23 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "color.cpp",
-              "DocumentMoniker": "C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\OOP_kethua\\color.cpp",
-              "RelativeDocumentMoniker": "OOP_kethua\\color.cpp",
-              "ToolTip": "C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\OOP_kethua\\color.cpp",
-              "RelativeToolTip": "OOP_kethua\\color.cpp",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAcwCYAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-14T18:12:32.052Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 430,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "color.h",
-              "DocumentMoniker": "C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\OOP_kethua\\color.h",
-              "RelativeDocumentMoniker": "OOP_kethua\\color.h",
-              "ToolTip": "C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\OOP_kethua\\color.h",
-              "RelativeToolTip": "OOP_kethua\\color.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-14T18:00:05.168Z",
+              "Title": "string.cpp",
+              "DocumentMoniker": "C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\Leetcode\\string.cpp",
+              "RelativeDocumentMoniker": "Leetcode\\string.cpp",
+              "ToolTip": "C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\Leetcode\\string.cpp*",
+              "RelativeToolTip": "Leetcode\\string.cpp*",
+              "ViewState": "AQIAACwAAAAAAAAAAAAcwC8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-28T15:32:20.916Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 337,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 395,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Pixel.h",
-              "DocumentMoniker": "C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\OOP_kethua\\Pixel.h",
-              "RelativeDocumentMoniker": "OOP_kethua\\Pixel.h",
-              "ToolTip": "C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\OOP_kethua\\Pixel.h",
-              "RelativeToolTip": "OOP_kethua\\Pixel.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-14T18:00:37.718Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -86,30 +50,37 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 347,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\Leetcode\\main.cpp",
+              "RelativeDocumentMoniker": "Leetcode\\main.cpp",
+              "ToolTip": "C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\Leetcode\\main.cpp",
+              "RelativeToolTip": "Leetcode\\main.cpp",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwCMAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-28T15:32:36.867Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "point.h",
-              "DocumentMoniker": "C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\OOP_kethua\\point.h",
-              "RelativeDocumentMoniker": "OOP_kethua\\point.h",
-              "ToolTip": "C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\OOP_kethua\\point.h",
-              "RelativeToolTip": "OOP_kethua\\point.h",
+              "Title": "leetcode.h",
+              "DocumentMoniker": "C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\Leetcode\\leetcode.h",
+              "RelativeDocumentMoniker": "Leetcode\\leetcode.h",
+              "ToolTip": "C:\\Users\\OneTap\\source\\repos\\leetcode\\class_SV\\Leetcode\\leetcode.h",
+              "RelativeToolTip": "Leetcode\\leetcode.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-14T18:00:06.922Z",
+              "WhenOpened": "2024-08-28T15:32:22.73Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 171,
+          "DockedWidth": 337,
           "SelectedChildIndex": -1,
           "Children": [
             {

@@ -29,12 +29,12 @@ int main()
 	//}
 	//cout << endl;
 	solution_string s1;
-	string s = "anagram";
+	string s = "anagmar";
 	string t = "nagaram";
 	if (s1.isaangram(s, t) == true)
 	{
 		cout << "true";
-	}
+ 	}
 	else
 	{
 		cout << "false";
