@@ -26,3 +26,9 @@ public:
 	vector<vector<int>> rotateimage(vector<vector<int>>& matrix);
 };
 
+class solution_string : public solution
+{
+public:
+	bool isaangram(string& s, string& t);
+};
+
