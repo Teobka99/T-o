@@ -202,6 +202,35 @@ void find_algorithm::linear_search(vector<int> arr)
 	}
 }
 
+void find_algorithm::jump_search(vector<int> arr)
+{
+	int x;
+	cout << "nhap gia tri can search: ";
+	cin >> x;
+	int n = arr.size();
+	int j = sqrt(n);
+	cout <<"jump = " << j << endl;
+	int start = 0;
+	int next = j;
+	while (start < n -1 && arr[next - 1] < x )
+	{
+		start = next;
+		next = next + j;
+		if (next >= (n -1))
+		{
+			next = n - 1;
+		}
+	}
+	for (int i = start; i < next; i++)
+	{
+		if (arr[i] == x)
+		{
+			cout << "the location of x in array is: " << i << endl;
+		}
+	}
+
+}
+
 void sortarr::option()
 {
 	cout << "==============MENU=============" << endl;
@@ -213,6 +242,7 @@ void sortarr::option()
 	cout << "6: Show_arr" << endl;
 	cout << "7: binary_search" << endl;
 	cout << "8: linear_search" << endl;
+	cout << "9: Jump_search" << endl;
 	cout << "0: exit." << endl;
 	cout << "===============================" << endl;
 }
@@ -277,6 +307,11 @@ int main()
 			case 8:
 			{
 				s0.linear_search(arr);
+				break;
+			}
+			case 9:
+			{
+				s0.jump_search(arr);
 				break;
 			}
 			case 0:

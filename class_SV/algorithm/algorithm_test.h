@@ -49,4 +49,5 @@ class find_algorithm
 public:
 	void binary_search(vector<int> arr);
 	void linear_search(vector<int> arr);
+	void jump_search(vector<int> arr);
 };
