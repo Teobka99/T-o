@@ -24,6 +24,8 @@ public:
 	vector<int> twosum(vector<int>& nums, int target);
 
 	vector<vector<int>> rotateimage(vector<vector<int>>& matrix);
+
+	void merge_sort(vector<int>& vt1, int& m, vector<int>& vt2, int& n);
 };
 
 class solution_string : public solution

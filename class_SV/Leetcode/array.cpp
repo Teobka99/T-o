@@ -147,3 +147,38 @@ vector<int> solution::twosum(vector<int>& nums, int target)
 //{
 //
 //}
+
+void solution::merge_sort(vector<int> &vt1, int& m, vector<int> &vt2, int& n)
+{
+	int i = m -1;
+	int x = vt1[m - 1];
+	int idx = 0;
+	int k = 0;
+	while (idx <n)
+	{
+		if (vt2[idx] <= x)
+		{
+			while (i !=0)
+			{
+				if (vt2[idx] >= vt1[i -1])
+				{
+					vt1.insert(vt1.begin() + i, vt2[idx]);
+					vt1.pop_back();
+					break;
+				}
+				else
+				{
+					i--;
+				}
+			}
+		}
+		if (vt2[idx] > x	)
+		{
+			vt1.insert(vt1.begin() + m + k, vt2[idx]);
+			vt1.pop_back();
+			k++;
+		}
+		idx++;
+
+	}
+}
