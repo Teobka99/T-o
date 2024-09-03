@@ -1,9 +1,9 @@
 ﻿  array.cpp
-C:\Users\sev_user\source\repos\leetcode\class_SV\Leetcode\array.cpp(18,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\sev_user\source\repos\leetcode\class_SV\Leetcode\array.cpp(29,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\sev_user\source\repos\leetcode\class_SV\Leetcode\array.cpp(47,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\sev_user\source\repos\leetcode\class_SV\Leetcode\array.cpp(62,20): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\sev_user\source\repos\leetcode\class_SV\Leetcode\array.cpp(68,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\sev_user\source\repos\leetcode\class_SV\Leetcode\array.cpp(93,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\sev_user\source\repos\leetcode\class_SV\Leetcode\array.cpp(87): warning C4715: 'solution::digit': not all control paths return a value
-  Leetcode.vcxproj -> C:\Users\sev_user\source\repos\leetcode\class_SV\x64\Debug\Leetcode.exe
+C:\Users\OneTap\source\repos\leetcode\class_SV\Leetcode\array.cpp(18,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\OneTap\source\repos\leetcode\class_SV\Leetcode\array.cpp(29,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\OneTap\source\repos\leetcode\class_SV\Leetcode\array.cpp(47,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\OneTap\source\repos\leetcode\class_SV\Leetcode\array.cpp(62,18): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\OneTap\source\repos\leetcode\class_SV\Leetcode\array.cpp(68,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\OneTap\source\repos\leetcode\class_SV\Leetcode\array.cpp(93,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\OneTap\source\repos\leetcode\class_SV\Leetcode\array.cpp(87,1): warning C4715: 'solution::digit': not all control paths return a value
+  Leetcode.vcxproj -> C:\Users\OneTap\source\repos\leetcode\class_SV\x64\Debug\Leetcode.exe

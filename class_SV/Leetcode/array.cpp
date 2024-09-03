@@ -1,4 +1,4 @@
-#include<iostream>
+﻿#include<iostream>
 #include<math.h>
 #include<string>
 #include<vector>
@@ -148,37 +148,41 @@ vector<int> solution::twosum(vector<int>& nums, int target)
 //
 //}
 
-void solution::merge_sort(vector<int> &vt1, int& m, vector<int> &vt2, int& n)
+void solution::merge_sort(vector<int>& vt1, int& m, vector<int>& vt2, int& n)
 {
-	int i = m -1;
-	int x = vt1[m - 1];
-	int idx = 0;
-	int k = 0;
-	while (idx <n)
+	/*
+	* ý tưởng:
+	* 1: dùng 1 vector khác để lưu và sort sau đó gán cho vt1.
+	*/
+	vector<int> res (m + n);
+	int i = m- 1;
+	int j = n -1; int k = m+n -1;
+	while (i >=0 && j>=0)
 	{
-		if (vt2[idx] <= x)
+		//sao sánh phần tử lớn nhất của 2 vector và them vào vector res
+		if (vt2[j] > vt1[i])
 		{
-			while (i !=0)
-			{
-				if (vt2[idx] >= vt1[i -1])
-				{
-					vt1.insert(vt1.begin() + i, vt2[idx]);
-					vt1.pop_back();
-					break;
-				}
-				else
-				{
-					i--;
-				}
-			}
+			res[k] = vt2[j];
+			k--; j--;
 		}
-		if (vt2[idx] > x	)
+		else
 		{
-			vt1.insert(vt1.begin() + m + k, vt2[idx]);
-			vt1.pop_back();
-			k++;
+			res[k] = vt1[i];
+			k--; i--;
 		}
-		idx++;
-
 	}
+	// when i =0 but j >= 0
+	while (j >= 0)
+	{
+		res[k] = vt2[j];
+		k--; j--;
+	}
+	// when  j  = 0 but j !=0
+	while (i >= 0)
+	{
+		res[k] = vt1[i];
+		k--; i--;
+	}
+	//  gán res for vt1.
+	vt1 = res;                            
 }
